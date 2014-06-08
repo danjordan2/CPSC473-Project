@@ -1,0 +1,40 @@
+<!--
+//===========================================================
+// CPSC 473 Project 2
+// Team:  Econometric Rhombus
+// File: views/login.html
+//===========================================================
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Econometric Rhombus</title>
+        <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
+        <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css'/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+        <script src='/javascripts/bootstrap.min.js'></script>
+    </head>
+    <body id="teacher_question">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Econometric Rhombus</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container theme-showcase" role="main">
+            <div id="login">
+                <form class="form-signin" role="form" method="post" action="/login">
+                    <h2 class="form-signin-heading">Please sign in</h2>
+                    <input name="user" type="user" class="form-control" placeholder="Username" required autofocus>
+                    <input name="password" type="password" class="form-control" placeholder="Password" required>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

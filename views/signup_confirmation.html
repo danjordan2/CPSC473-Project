@@ -1,0 +1,42 @@
+<!--
+//===========================================================
+// CPSC 473 Project 2
+// Team:  Econometric Rhombus
+// File: views/signup_confirmation.html
+//===========================================================
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Success</title>
+        <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
+        <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css'/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+        <script src='/socket.io/socket.io.js'></script>
+        <script src='/javascripts/bootstrap.min.js'></script>
+        <script src='/javascripts/socket_client.js'></script>
+    </head>
+    <body id="teacher_question">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/teacher">Teacher</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/teacher/question">Question</a></li>
+                    <li><a href="/teacher/results">Class results</a></li>
+                    <li><a href="/discussion">Discussion</a></li>
+                    <li class="active"><a href="/teacher/signup">User Signup</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"><i class="glyphicon glyphicon-user"></i> {{username}}</a></li>
+                    <li><a href="/logout"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container theme-showcase" role="main">
+            <h3>{{message.message}}</h3>
+            <p>{{message.error}}</p>
+        </div>
+    </body>
+</html>

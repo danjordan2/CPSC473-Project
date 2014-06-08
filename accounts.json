@@ -1,0 +1,57 @@
+[{
+    "name": "Daniel Jordan",
+    "username": "djordan",
+    "password": "password",
+    "role": "student",
+    "_id": {
+        "$oid": "5344c49c203705fb185badbe"
+    }
+}, {
+    "name": "Kenytt Avery",
+    "username": "kavery",
+    "password": "password",
+    "role": "teacher",
+    "_id": {
+        "$oid": "5344c59994d6365b1a4d278d"
+    }
+}, {
+    "name": "Anatoliy Anderson",
+    "username": "aanderson",
+    "password": "password",
+    "role": "student",
+    "_id": {
+        "$oid": "5344c7009cdda4d91accfbff"
+    }
+}, {
+    "name": "Kimberly Hermans",
+    "username": "khermans",
+    "password": "password",
+    "role": "student",
+    "_id": {
+        "$oid": "5344c71a9cdda4d91accfc00"
+    }
+}, {
+    "name": "Shaun Feltman",
+    "username": "sfeltman",
+    "password": "password",
+    "role": "student",
+    "_id": {
+        "$oid": "535f487ad4cfc7a412c001c3"
+    }
+}, {
+    "name": "Bernice Chen",
+    "username": "bchen",
+    "password": "password",
+    "role": "student",
+    "_id": {
+        "$oid": "535f488ad4cfc7a412c001c4"
+    }
+}, {
+    "name": "Laurence Lallave",
+    "username": "llallave",
+    "password": "password",
+    "role": "student",
+    "_id": {
+        "$oid": "535f48a4d4cfc7a412c001c5"
+    }
+}]

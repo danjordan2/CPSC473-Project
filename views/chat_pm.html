@@ -1,0 +1,41 @@
+<!--
+//===========================================================
+// CPSC 473 Project 2
+// Team:  Econometric Rhombus
+// Members: Daniel Jordan, Anatoliy Anderson, Kimberly Hermans
+//          Shaun Feltman, Bernice Chen, Laurence Lallave
+// File:    teacher_question.html
+//===========================================================
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{from}}-{{to}}</title>
+        <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
+        <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css'/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+        <script src='/socket.io/socket.io.js'></script>
+        <script src='/javascripts/bootstrap.min.js'></script>
+        <script src='/javascripts/private-chat.js'></script>
+    </head>
+    <body style="padding-top: 0px;">
+        <div id="chat_pm">
+        </div>
+        <div id="chat_window_pm">
+        </div>
+        <div id="chat_users_pm">
+        </div>
+        <div id="chat_message_pm">
+            <form id="chat">
+                <input name="to" type="hidden" value="{{to}}">
+                <input name="from" type="hidden" value="{{from}}">
+                <input name="action" type="hidden" value="{{action}}">
+                <input name="username" type="hidden" value="{{username}}">
+                <input name="message" type="text" class="form-control chat_msg_pm" placeholder="Enter message:" required>
+                <button type="submit" class="btn btn-primary chat_send">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

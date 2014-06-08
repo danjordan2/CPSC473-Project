@@ -1,0 +1,97 @@
+<!--
+//===========================================================
+// CPSC 473 Project 2
+// Team:  Econometric Rhombus
+// Members: Daniel Jordan, Anatoliy Anderson, Kimberly Hermans
+//          Shaun Feltman, Bernice Chen, Laurence Lallave
+// File:    student_question.html
+//===========================================================
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question</title>
+        <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
+        <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css'/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+        <script src='/socket.io/socket.io.js'></script>
+        <script src='/javascripts/bootstrap.min.js'></script>
+        <script src='/javascripts/student.js'></script>
+    </head>
+    <body id="student_quiz">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/student">Student</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/student/question">Question</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"><i class="glyphicon glyphicon-user"></i> {{username}}</a></li>
+                    <li><a href="/logout"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container theme-showcase" role="main">
+            <div class="navbar navbar-inverse add" style="margin-bottom: 0px;" role="navigation">
+                <span class="add_new">Answers</span>
+            </div>
+            <div id="answers_container">
+                <div class="jumbotron">
+                    <form  id="answer_form" role="form" class="form-horizontal results">
+                        <div class="form-group" style="padding-left: 13px;">
+                            <div class="input-group">
+                                <span class="input-group-addon">Question</span>
+                                <input type="text" class="form-control" name="question" disabled>
+                            </div>
+                            <div class="progress progress">
+                                <div class="input-group">
+                                    <span class="input-group-addon answer_label">A</span>
+                                    <input type="text" class="form-control" name="answer_A" disabled>
+                                </div>
+                            </div>
+                            <div class="progress progress">
+                                <div class="input-group">
+                                    <span class="input-group-addon answer_label">B</span>
+                                    <input type="text" class="form-control" name="answer_B" disabled>
+                                </div>
+                            </div>
+                            <div class="progress progress">
+                                <div class="input-group">
+                                    <span class="input-group-addon answer_label">C</span>
+                                    <input type="text" class="form-control" name="answer_C" disabled>
+                                </div>
+                            </div>
+                            <div class="progress progress">
+                                <div class="input-group">
+                                    <span class="input-group-addon answer_label">D</span>
+                                    <input type="text" class="form-control" name="answer_D" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="submit_answer" type="button" class="btn btn-primary">Submit Answer</button>
+                    </form>
+                </div>
+                <div id="error"></div>
+            </div>
+            <div id="chat">
+                <div class="navbar navbar-inverse add" style="margin-bottom: 0px;" role="navigation">
+                    <span class="add_new">Chat</span>
+                </div>
+                <div id="chat_rooms">  
+                </div>
+                <div id="chat_window">
+                </div>
+                <div id="chat_users">
+                </div>
+                <div id="chat_message">
+                    <form id="chat">
+                        <input name="username" type="hidden" value="{{username}}">
+                        <input name="message" type="text" class="form-control chat_msg" placeholder="Enter message:" required>
+                        <button type="submit" class="btn btn-primary chat_send">Send</button>
+                    </form>
+                </div>
+            </div>
+        </body>
+    </html>
